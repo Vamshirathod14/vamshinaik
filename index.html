@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Furniture</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Add New Furniture</h1>
+        <nav>
+            <a href="display.html" id="view-furniture-link">View Furniture</a>
+        </nav>
+    </header>
+    <main>
+        <div id="login-container">
+            <form id="login-form">
+                <input type="password" id="password" placeholder="Enter Password" required>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+        <div id="add-furniture-container" style="display: none;">
+            <form id="furniture-form">
+                <input type="text" id="name" placeholder="Furniture Name" required>
+                <textarea id="description" placeholder="Description" required></textarea>
+                <input type="file" id="image" accept="image/*" multiple required>
+                <button type="submit">Add Furniture</button>
+            </form>
+            <div id="furniture-grid"></div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2023 Furniture Showcase</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

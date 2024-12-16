@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furniture Display</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Furniture Showcase</h1>
+        <nav>
+            <img src="login-icon.png" alt="Login" id="login-icon" style="width: 30px; cursor: pointer;" onclick="toggleLogin()">
+        </nav>
+    </header>
+    <main>
+        <div class="grid-container" id="furniture-grid">
+            <!-- Furniture items will be dynamically added here -->
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2023 Furniture Showcase</p>
+    </footer>
+
+    <script src="display.js"></script>
+    <script>
+        function toggleLogin() {
+            window.location.href = 'index.html'; // Redirect to the login page
+        }
+    </script>
+</body>
+</html>
